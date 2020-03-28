@@ -1,0 +1,45 @@
+html, body, div, h1, span{
+	margin:0;
+	padding:0;
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	border:10px solid rgba(32,33,36,0.28);
+	height:100%;
+	width:100%;
+	box-sizing:border-box;
+	position:relative;
+}
+
+div{
+	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+	position:absolute;
+	display:flex;
+	font-size:3vmin;
+	transition:transform ease-in-out 0.3s, background-color ease 0.3s;
+	background-color:goldenrod;
+}
+div::after{
+	content:"Ckick me";
+	cursor:pointer;
+	padding:10px 20px;
+}
+div:hover::after{
+	border:1px solid #CCC;
+}
+span{
+	font-size:8vw;
+	color:red;
+}
+h1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	font-size:4vw;
+}
