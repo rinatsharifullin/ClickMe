@@ -25,7 +25,7 @@ div{
 	background-color:goldenrod;
 }
 div::after{
-	content:"Ckick me";
+	content:"Click me";
 	cursor:pointer;
 	padding:10px 20px;
 }
